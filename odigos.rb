@@ -5,20 +5,20 @@
 class Odigos < Formula
   desc "Odigos CLI Utility"
   homepage "https://odigos.io"
-  version "1.0.215-pr0"
+  version "1.0.215-pr1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/odigos-io/odigos/releases/download/v1.0.215-pr0/cli_1.0.215-pr0_darwin_amd64.tar.gz"
-      sha256 "dc0ded4e32c15086950bf4f834af7409e0721b95a0bff20b7e3196104ab4ed9c"
+      url "https://github.com/odigos-io/odigos/releases/download/v1.0.215-pr1/cli_1.0.215-pr1_darwin_amd64.tar.gz"
+      sha256 "b9df3bf1b4f9e03aa1656265dbffff39a272f4a736869830e8a596224eec8814"
 
       def install
         bin.install "odigos"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/odigos-io/odigos/releases/download/v1.0.215-pr0/cli_1.0.215-pr0_darwin_arm64.tar.gz"
-      sha256 "2ebd751c58597e612dc9fa59231b98fd57d671be35948b52903668802deb9f55"
+      url "https://github.com/odigos-io/odigos/releases/download/v1.0.215-pr1/cli_1.0.215-pr1_darwin_arm64.tar.gz"
+      sha256 "f29e018c6a648dc480cb474d1dd8a3cd195cc705c766ffe557de6cfb4b76ca6a"
 
       def install
         bin.install "odigos"
@@ -28,15 +28,15 @@ class Odigos < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/odigos-io/odigos/releases/download/v1.0.215-pr0/cli_1.0.215-pr0_linux_amd64.tar.gz"
-      sha256 "954e332bec7caf95d83f4f6b1f7c7bb91532806585deaec76bfbc35da7a5b821"
+      url "https://github.com/odigos-io/odigos/releases/download/v1.0.215-pr1/cli_1.0.215-pr1_linux_amd64.tar.gz"
+      sha256 "244bbd2e37745b990bfae9cda44ee062c373c1a74e8385bb48981221e334faaf"
       def install
         bin.install "odigos"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/odigos-io/odigos/releases/download/v1.0.215-pr0/cli_1.0.215-pr0_linux_arm64.tar.gz"
-      sha256 "6b6fcd7dd9ab15689a83d4fe1cf46e78d4e352b2442f1053634b6f258d3e9b96"
+      url "https://github.com/odigos-io/odigos/releases/download/v1.0.215-pr1/cli_1.0.215-pr1_linux_arm64.tar.gz"
+      sha256 "b5b77ee01a7352b36e897864a1aa3e5d9e7963242f50d7662c9537f7c1afb50c"
       def install
         bin.install "odigos"
       end
