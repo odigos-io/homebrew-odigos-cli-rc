@@ -5,20 +5,20 @@
 class Odigos < Formula
   desc "Odigos CLI Utility"
   homepage "https://odigos.io"
-  version "1.30.0-rc2"
+  version "1.30.0-rc3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/odigos-io/odigos/releases/download/v1.30.0-rc2/cli_1.30.0-rc2_darwin_amd64.tar.gz"
-      sha256 "295b33ed2ab4e16f6470249a99666576843438424f421fdd2757243864b59bcf"
+      url "https://github.com/odigos-io/odigos/releases/download/v1.30.0-rc3/cli_1.30.0-rc3_darwin_amd64.tar.gz"
+      sha256 "0156b74c03dc383667fee6c13cc167bc92432c0b7d57ea4b2b9575db738f7af2"
 
       define_method(:install) do
         bin.install "odigos"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/odigos-io/odigos/releases/download/v1.30.0-rc2/cli_1.30.0-rc2_darwin_arm64.tar.gz"
-      sha256 "140c571dafbe0bc41e4d24738c1cc386a4df96898609ffbdcf3302a54e559f87"
+      url "https://github.com/odigos-io/odigos/releases/download/v1.30.0-rc3/cli_1.30.0-rc3_darwin_arm64.tar.gz"
+      sha256 "e30a1c3295c6f8bc8697fa09fd3c40c62d55dbc5a009383028975bd7c97dfa51"
 
       define_method(:install) do
         bin.install "odigos"
@@ -28,15 +28,15 @@ class Odigos < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/odigos-io/odigos/releases/download/v1.30.0-rc2/cli_1.30.0-rc2_linux_amd64.tar.gz"
-      sha256 "f19c9a0c85fa09a6138102d38b073f808f724f9053a2c9cb6e7f733769cae6b4"
+      url "https://github.com/odigos-io/odigos/releases/download/v1.30.0-rc3/cli_1.30.0-rc3_linux_amd64.tar.gz"
+      sha256 "59c17e57ea860b170d4e04de7d7ee3d6ee3a8ebe5b3961325e1c409dd6d21677"
       define_method(:install) do
         bin.install "odigos"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/odigos-io/odigos/releases/download/v1.30.0-rc2/cli_1.30.0-rc2_linux_arm64.tar.gz"
-      sha256 "25f5cfec69dd9c2a43277d90111ffeb8ba796aca17e9699e9bc72e36c522d836"
+      url "https://github.com/odigos-io/odigos/releases/download/v1.30.0-rc3/cli_1.30.0-rc3_linux_arm64.tar.gz"
+      sha256 "dff28ae5129506fa117705fa00fe15a0a2fe752d1d7029080d752cd2a9536ad7"
       define_method(:install) do
         bin.install "odigos"
       end
