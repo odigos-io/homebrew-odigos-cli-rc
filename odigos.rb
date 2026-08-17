@@ -10,7 +10,7 @@ class Odigos < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/odigos-io/odigos/releases/download/v1.36.0-pre2/cli_1.36.0-pre2_darwin_amd64.tar.gz"
-      sha256 "2a31b39f78b625f3263e3e412121b7acf0873a8bf47f010c5b3f1d252ce224e8"
+      sha256 "a37befaadb47bf123345bf1344f73f4519dd29ad6bf167c65dcdfe974756b517"
 
       define_method(:install) do
         bin.install "odigos"
@@ -18,7 +18,7 @@ class Odigos < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/odigos-io/odigos/releases/download/v1.36.0-pre2/cli_1.36.0-pre2_darwin_arm64.tar.gz"
-      sha256 "11831efe115dda7106cc373074b20c424d1af1c76d17c612401a6dcaa124c40b"
+      sha256 "6c9419bfdc9603e710a8dc2596b0534912a9dab0731f5fe52092afe79ef1ecac"
 
       define_method(:install) do
         bin.install "odigos"
@@ -29,14 +29,14 @@ class Odigos < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/odigos-io/odigos/releases/download/v1.36.0-pre2/cli_1.36.0-pre2_linux_amd64.tar.gz"
-      sha256 "1e7d42215f042574badd0819cb3515c9a9b5f1d0d019bf1a3c59c75238f337c1"
+      sha256 "5baa21b34a1c382ba12ce7cba85b9925b670b9ebb1644f512ac6ccd3f503d9ce"
       define_method(:install) do
         bin.install "odigos"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/odigos-io/odigos/releases/download/v1.36.0-pre2/cli_1.36.0-pre2_linux_arm64.tar.gz"
-      sha256 "6476b0c45cf3ecfde0075a42368d9046bbd20810c022f5ad650f630409e0629e"
+      sha256 "d1b0c594c40835a0176208a4815a50b0ddf0b65a62c9fedda88227c6abd2393b"
       define_method(:install) do
         bin.install "odigos"
       end
