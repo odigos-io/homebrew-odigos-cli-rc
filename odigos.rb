@@ -5,20 +5,20 @@
 class Odigos < Formula
   desc "Odigos CLI Utility"
   homepage "https://odigos.io"
-  version "1.38.0-pre0"
+  version "1.38.0-pre1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/odigos-io/odigos/releases/download/v1.38.0-pre0/cli_1.38.0-pre0_darwin_amd64.tar.gz"
-      sha256 "43335b67c2c4ff00b86f18255ff2458e9f3d3dc6a277c4a510563738b747afc2"
+      url "https://github.com/odigos-io/odigos/releases/download/v1.38.0-pre1/cli_1.38.0-pre1_darwin_amd64.tar.gz"
+      sha256 "5d9565ffb1e6ebb93667b955f876a5917b9428e238043802caf335db6d811e10"
 
       define_method(:install) do
         bin.install "odigos"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/odigos-io/odigos/releases/download/v1.38.0-pre0/cli_1.38.0-pre0_darwin_arm64.tar.gz"
-      sha256 "efcdc2feab1b09fcf4a3697647f8c71cc1ad3adc81f1a655dafde70428141218"
+      url "https://github.com/odigos-io/odigos/releases/download/v1.38.0-pre1/cli_1.38.0-pre1_darwin_arm64.tar.gz"
+      sha256 "99927fca55580216da3f8c1006ad6e794f6d645f7351f5245c94f3f69e170f3d"
 
       define_method(:install) do
         bin.install "odigos"
@@ -28,15 +28,15 @@ class Odigos < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/odigos-io/odigos/releases/download/v1.38.0-pre0/cli_1.38.0-pre0_linux_amd64.tar.gz"
-      sha256 "6737029e1f834e52c40ad09b98b957374ec0bcfedc774ec1ab31589bc49e3411"
+      url "https://github.com/odigos-io/odigos/releases/download/v1.38.0-pre1/cli_1.38.0-pre1_linux_amd64.tar.gz"
+      sha256 "b6a7c2ec269f294aaf61b633c0466cd4afa6096d40b433755173e67191868e7a"
       define_method(:install) do
         bin.install "odigos"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/odigos-io/odigos/releases/download/v1.38.0-pre0/cli_1.38.0-pre0_linux_arm64.tar.gz"
-      sha256 "7cd2f4b54b9eea58fe85bea7de09c2bdef4634b3cf0edeec751c51faece91576"
+      url "https://github.com/odigos-io/odigos/releases/download/v1.38.0-pre1/cli_1.38.0-pre1_linux_arm64.tar.gz"
+      sha256 "88d917850d89bd6eba1489029ad242d1b74c9831acff0537b36e3f956c344254"
       define_method(:install) do
         bin.install "odigos"
       end
