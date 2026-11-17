@@ -6,20 +6,20 @@ require_relative "lib/odigos_registry_download_strategy"
 class Odigos < Formula
   desc "Odigos CLI Utility"
   homepage "https://odigos.io"
-  version "1.41.0-pre1"
+  version "1.40.0-rc1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://registry.odigos.io/v2/odigos-cli-artifacts/blobs/sha256:b2c65c88d00f7c1d9fb6b7a9f9c18a15a60d5ed2b598b8e37f8c8c9bb6dec6a2", using: OdigosRegistryDownloadStrategy
-      sha256 "b2c65c88d00f7c1d9fb6b7a9f9c18a15a60d5ed2b598b8e37f8c8c9bb6dec6a2"
+      url "https://registry.odigos.io/v2/odigos-cli-artifacts/blobs/sha256:fdb1dd58cbf0d41b8dab846b6c0c4583bc016b16bda248c2b15001e29e65def2", using: OdigosRegistryDownloadStrategy
+      sha256 "fdb1dd58cbf0d41b8dab846b6c0c4583bc016b16bda248c2b15001e29e65def2"
 
       define_method(:install) do
         bin.install "odigos"
       end
     end
     if Hardware::CPU.arm?
-      url "https://registry.odigos.io/v2/odigos-cli-artifacts/blobs/sha256:3b994ffd3e9aa83527e521e52b5d2e6ad1fea6cfb4c5546c1936639e0895a53b", using: OdigosRegistryDownloadStrategy
-      sha256 "3b994ffd3e9aa83527e521e52b5d2e6ad1fea6cfb4c5546c1936639e0895a53b"
+      url "https://registry.odigos.io/v2/odigos-cli-artifacts/blobs/sha256:de55eed617e46c6a4477401b5b9bbc5c0b130cf5ee269cdd68020ad4c3df5c1c", using: OdigosRegistryDownloadStrategy
+      sha256 "de55eed617e46c6a4477401b5b9bbc5c0b130cf5ee269cdd68020ad4c3df5c1c"
 
       define_method(:install) do
         bin.install "odigos"
@@ -29,15 +29,15 @@ class Odigos < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://registry.odigos.io/v2/odigos-cli-artifacts/blobs/sha256:dd41f4fb623667573ccd3812c23d7b06bc777621a1ea70ae5f96b5fcbac72e4b", using: OdigosRegistryDownloadStrategy
-      sha256 "dd41f4fb623667573ccd3812c23d7b06bc777621a1ea70ae5f96b5fcbac72e4b"
+      url "https://registry.odigos.io/v2/odigos-cli-artifacts/blobs/sha256:b5e2d45b8313dca9e8a3bbccbd22b6427abe3af57b5e7a01dbfa4d11ad644119", using: OdigosRegistryDownloadStrategy
+      sha256 "b5e2d45b8313dca9e8a3bbccbd22b6427abe3af57b5e7a01dbfa4d11ad644119"
       define_method(:install) do
         bin.install "odigos"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://registry.odigos.io/v2/odigos-cli-artifacts/blobs/sha256:f441b2999ee7e0a9c1bb2f11bdc33d923b773323ee3f7dbb78c4ee7b4fec30d5", using: OdigosRegistryDownloadStrategy
-      sha256 "f441b2999ee7e0a9c1bb2f11bdc33d923b773323ee3f7dbb78c4ee7b4fec30d5"
+      url "https://registry.odigos.io/v2/odigos-cli-artifacts/blobs/sha256:4ed033d62bbc859dd6d824d2fe5c3819ff9e1a5f5a22ac03ba1ce9e3fdbacf2b", using: OdigosRegistryDownloadStrategy
+      sha256 "4ed033d62bbc859dd6d824d2fe5c3819ff9e1a5f5a22ac03ba1ce9e3fdbacf2b"
       define_method(:install) do
         bin.install "odigos"
       end
